@@ -1,0 +1,47 @@
+/* Hero.module.css */
+
+.socialIcon {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .socialIcon:hover {
+    transform: scale(1.1); /* Grow slightly */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Glow effect */
+  }
+  
+  .slideIn {
+    animation: slideIn 1s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .imageContainer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .imageContainer:hover {
+    box-shadow: 0 0 30px 15px rgba(255, 255, 255, 0.5); /* Glowing effect */
+  }
+  
+  .image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
