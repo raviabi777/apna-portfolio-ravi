@@ -1,7 +1,7 @@
 // ContactForm.tsx
 import React, { useState } from 'react';
 
-const ContactForm = ({ closeModal }) => {
+const ContactForm = ({ closeModal }: { closeModal: () => void }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
