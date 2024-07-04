@@ -2,6 +2,13 @@
   "name": "apna-portfolio",
   "version": "0.1.0",
   "private": true,
+  
+  "eslintConfig": {
+    "extends": "next/core-web-vitals",
+    "rules": {
+      "react/no-unescaped-entities": "off"
+    }
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

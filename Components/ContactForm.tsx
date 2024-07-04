@@ -1,4 +1,3 @@
-// ContactForm.tsx
 import React, { useState } from 'react';
 
 const ContactForm = ({ closeModal }: { closeModal: () => void }) => {
@@ -6,7 +5,7 @@ const ContactForm = ({ closeModal }: { closeModal: () => void }) => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Implement your message sending logic here
     alert(`Message sent by ${name} (${email}): ${message}`);
@@ -38,7 +37,9 @@ const ContactForm = ({ closeModal }: { closeModal: () => void }) => {
         <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2" htmlFor="name">Full Name</label>
+            <label htmlFor="name" className="block text-gray-700 mb-2">
+              Full Name
+            </label>
             <input
               type="text"
               id="name"
@@ -49,7 +50,9 @@ const ContactForm = ({ closeModal }: { closeModal: () => void }) => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2" htmlFor="email">Email</label>
+            <label htmlFor="email" className="block text-gray-700 mb-2">
+              Email
+            </label>
             <input
               type="email"
               id="email"
@@ -60,7 +63,9 @@ const ContactForm = ({ closeModal }: { closeModal: () => void }) => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2" htmlFor="message">Message</label>
+            <label htmlFor="message" className="block text-gray-700 mb-2">
+              Message
+            </label>
             <textarea
               id="message"
               className="w-full px-3 py-2 border border-gray-300 rounded-md"
@@ -70,8 +75,19 @@ const ContactForm = ({ closeModal }: { closeModal: () => void }) => {
             ></textarea>
           </div>
           <div className="flex justify-between">
-            <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded-md">Send Message</button>
-            <button type="button" onClick={closeModal} className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md">Close</button>
+            <button
+              type="submit"
+              className="px-4 py-2 bg-blue-500 text-white rounded-md"
+            >
+              Send Message
+            </button>
+            <button
+              type="button"
+              onClick={closeModal}
+              className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md"
+            >
+              Close
+            </button>
           </div>
         </form>
       </div>
