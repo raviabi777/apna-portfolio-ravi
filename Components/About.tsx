@@ -1,6 +1,7 @@
 import { ArrowDownTrayIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
 import React from 'react';
+import styles from './Hero.module.css';
 
 export const About = () => {
   return (

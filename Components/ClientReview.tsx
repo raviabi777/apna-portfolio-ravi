@@ -2,7 +2,7 @@
 import { StarIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
 import React from 'react';
-
+import styles from './Hero.module.css';
 interface Props {
     name: string;
     role: string;
