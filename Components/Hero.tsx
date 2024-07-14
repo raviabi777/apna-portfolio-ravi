@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { ArrowDownTrayIcon } from '@heroicons/react/20/solid';
 import { Icon } from '@iconify/react';
 import { SocialIcon } from 'react-social-icons';
-import styles from '../styles/Hero.module.css'; // Import CSS for styles
+import styles from './Hero.module.css'; // Import CSS for styles
 
 const Hero = () => {
   return (
@@ -41,7 +41,7 @@ const Hero = () => {
             <SocialIcon url="https://www.linkedin.com/in/ravikant-prasad-04288b2a8/" className={`${styles.socialIcon} ${styles.slideIn}`} />
           </div>
         </div>
-        
+
         <div className={`${styles.imageContainer} hidden lg:flex items-center`}>
           <Image src="/images/r3.jpeg" alt="user" layout="fill" className={styles.image} />
         </div>
