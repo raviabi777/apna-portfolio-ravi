@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { ArrowDownTrayIcon } from '@heroicons/react/20/solid';
 import { Icon } from '@iconify/react';
 import { SocialIcon } from 'react-social-icons';
-import styles from './Hero.module.css'; // Import CSS for styles
+import styles from '../styles/Hero.module.css'; // Import CSS for styles
 
 const Hero = () => {
   return (
