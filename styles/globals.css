@@ -4,86 +4,15 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* Custom CSS for navigation links */
-.nav-link {
-  font-family: 'Poppins', sans-serif; /* Or use your preferred font */
-  font-weight: 600; /* Equivalent to 'font-semibold' */
-  color: white;
-  cursor: pointer;
-  font-size: 17px;
-  width: fit-content;
-  position: relative;
-  display: none; /* hidden in mobile view */
-}
-
-.nav-link::after {
-  content: '';
-  position: absolute;
-  height: 3px;
-  background-color: #fbbf24; /* Equivalent to bg-yellow-400 */
-  width: 100%;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-out;
-  transform-origin: center;
-}
-
-.nav-link:hover::after {
-  transform: scaleX(1);
-}
-
-/* Custom CSS for mobile navigation links */
-.nav-link-mobile {
-  font-family: 'Poppins', sans-serif; /* Or use your preferred font */
-  font-weight: 600; /* Equivalent to 'font-semibold' */
-  color: white;
-  cursor: pointer;
-  font-size: 27px;
-  width: fit-content;
-  margin-bottom: 2rem;
-  position: relative;
-}
-
-.nav-link-mobile::after {
-  content: '';
-  position: absolute;
-  height: 3px;
-  background-color: #fbbf24; /* Equivalent to bg-yellow-400 */
-  width: 100%;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-out;
-  transform-origin: center;
-}
-
-.nav-link-mobile:hover::after {
-  transform: scaleX(1);
-}
-
-/* Custom CSS for headings */
-.heading {
-  text-align: center;
-  color: white;
-  font-size: 28px;
-  font-weight: 700; /* Equivalent to 'font-bold' */
-  text-transform: uppercase;
-  width: fit-content;
-  margin: 0 auto;
-}
-
-/* Responsive adjustments */
-@media (min-width: 640px) {
-  .heading {
-    font-size: 33px;
+@layer components {
+  .nav-link{
+    @apply relative font-semibold text-white cursor-pointer text-[17px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden
   }
-}
-
-@media (min-width: 768px) {
-  .heading {
-    font-size: 45px;
+  .nav-link-mobile {
+    @apply relative mb-[2rem] font-semibold text-white cursor-pointer text-[27px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center
   }
-}
-
-@media (min-width: 768px) {
-  .nav-link {
-    display: block;
+  .heading{
+    @apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase 
   }
-}
+} 
+
