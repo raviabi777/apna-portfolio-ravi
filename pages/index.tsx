@@ -12,6 +12,7 @@ import Services from "@/Components/Services";
 import Skills from "@/Components/Skills";
 import Testimonial from "@/Components/Testimonial";
 import ContactForm from "@/Components/ContactForm";
+import "../styles/Hero.module.css";
 
 const HomePage = () => {
   const [nav, setNav] = useState(false);
