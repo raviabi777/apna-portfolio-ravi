@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
 
         <div className={`${styles.imageContainer} hidden lg:flex items-center`}>
-          <Image src="/images/r3.jpeg" alt="user" layout="fill" className={styles.image} />
+          <Image src="/images/r3.jpeg" alt="user" fill className={styles.image} />
         </div>
       </div>
     </div>
