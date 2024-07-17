@@ -2,16 +2,16 @@
 import React, { useEffect, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-import About from "@/Components/About";
-import Footer from "@/Components/Footer";
-import Hero from "@/Components/Hero";
-import MobileNav from "@/Components/MobileNav";
-import Nav from "@/Components/Nav";
-import Projects from "@/Components/Projects";
-import Services from "@/Components/Services";
-import Skills from "@/Components/Skills";
-import Testimonial from "@/Components/Testimonial";
-import ContactForm from "@/Components/ContactForm";
+import About from "../Components/About";
+import Footer from "../Components/Footer";
+import Hero from "../Components/Hero";
+import MobileNav from "../Components/MobileNav";
+import Nav from "../Components/Nav";
+import Projects from "../Components/Projects";
+import Services from "../Components/Services";
+import Skills from "../Components/Skills";
+import Testimonial from "../Components/Testimonial";
+import ContactForm from "../Components/ContactForm";
 
 const HomePage = () => {
   const [nav, setNav] = useState(false);
