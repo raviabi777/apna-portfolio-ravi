@@ -13,7 +13,7 @@ import Skills from "../Components/Skills";
 import Testimonial from "../Components/Testimonial";
 import ContactForm from "../Components/ContactForm";
 
-const index = () => {
+const HomePage = () => {
   const [nav, setNav] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
 
@@ -62,4 +62,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default HomePage;
