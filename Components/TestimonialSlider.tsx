@@ -1,4 +1,3 @@
-// TestimonialSlider.tsx
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -44,7 +43,7 @@ export const TestimonialSlider = () => {
                 image="/images/gauri.png"
                 name="Gautam Kantiwal"
                 role="Business Analyst"
-                review="❝ Ravi's analytical approach to web development is truly remarkable.Working with him has always been a pleasure, as he consistently brings innovative ideas to the table and executes them flawlessly. ❞"
+                review="❝ Ravi's analytical approach to web development is truly remarkable. Working with him has always been a pleasure, as he consistently brings innovative ideas to the table and executes them flawlessly. ❞"
             />
             <ClientReview
                 image="/images/ashok.jpg"

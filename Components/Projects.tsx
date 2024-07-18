@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import styles from './Hero.module.css';
 
 const projectData = [
   { src: "/images/project1.png", alt: "Project 1", description: "This Automatic Number Plate Recognition Software project involves developing a system that uses image processing and machine learning to accurately detect and read vehicle license plates in real-time." },
@@ -25,6 +24,7 @@ export const Projects = () => {
                 src={project.src} 
                 alt={project.alt} 
                 fill 
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
                 style={{ objectFit: 'contain' }} 
               />
               <div className="project-overlay absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-70">

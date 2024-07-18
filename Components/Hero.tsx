@@ -47,9 +47,9 @@ const Hero = () => {
             src="/images/r3.jpeg" 
             alt="user" 
             fill 
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
-            priority 
             className={styles.image} 
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            fetchPriority="high" 
           />
         </div>
       </div>

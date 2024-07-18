@@ -17,8 +17,8 @@ const ClientReview = ({ name, role, image, review }: Props) => {
                 alt={name} 
                 width={100} 
                 height={100} 
-                className="mx-auto mb-[2rem] rounded-full"
-                style={{ objectFit: 'contain' }} 
+                style={{ objectFit: 'contain', width: 'auto', height: 'auto' }} 
+                className="mx-auto mb-[2rem] rounded-full" 
             />
             <div className="flex items-center mx-auto">
                 <StarIcon className="w-[2rem] h-[2rem] text-yellow-500" />
