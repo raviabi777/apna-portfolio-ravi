@@ -24,7 +24,8 @@ export const Projects = () => {
                 src={project.src} 
                 alt={project.alt} 
                 fill 
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                fetchPriority="high"
                 style={{ objectFit: 'contain' }} 
               />
               <div className="project-overlay absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-70">
