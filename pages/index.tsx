@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-import About from "../components/About";
+import About from '../components/About';
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import MobileNav from "../components/MobileNav";
