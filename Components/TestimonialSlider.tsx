@@ -46,9 +46,9 @@ export const TestimonialSlider = () => {
                 review="❝ Ravi's analytical approach to web development is truly remarkable. Working with him has always been a pleasure, as he consistently brings innovative ideas to the table and executes them flawlessly. ❞"
             />
             <ClientReview
-                image="/images/ashok.jpg"
+                image="/images/ashok.jpeg"
                 name="Ashok Kumar"
-                role="MERN Stack Developer"
+                role="Investor"
                 review="❝ His attention to detail and commitment to quality make him a standout developer. It's always exciting to see what he comes up with next. ❞"
             />
             <ClientReview
