@@ -15,7 +15,7 @@ export const About = () => {
           <div className="mb-[3rem] flex items-center md:space-x-10">
             <span className="w-[75px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
             <p className="text-[19px] text-slate-100 w-[80%]">
-              I am a motivated and dedicated third-year Computer Science student with a passion for problem-solving and a keen interest in software development. I possess a solid foundation in programming languages such as Java, Python, and C++, and I'm enthusiastic about learning new technologies. I am a team player, having actively contributed to group projects, and I thrive in environments that challenge me to think critically and creatively. I am eager to apply my skills and knowledge in a practical setting and am committed to continuous learning and growth in the field of technology.
+              I am a motivated and dedicated fourth-year Computer Science student with a passion for problem-solving and a keen interest in software development. I possess a solid foundation in programming languages such as Java, Python, and C++, and I'm enthusiastic about learning new technologies. I am a team player, having actively contributed to group projects, and I thrive in environments that challenge me to think critically and creatively. I am eager to apply my skills and knowledge in a practical setting and am committed to continuous learning and growth in the field of technology.
             </p>
           </div>
         </div>
